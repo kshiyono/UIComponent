@@ -1,0 +1,11 @@
+.slide-arrow{
+  position: absolute;
+  top: 50%;
+  margin-top: 300px;
+}
+.prev-arrow{
+  left: 470px;
+}
+.next-arrow{
+  right: 470px;
+}

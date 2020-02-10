@@ -1,0 +1,39 @@
+
+<!doctype html>
+
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/slick.css">
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+
+  <body>
+    <div align="center">
+      <div style="border:solid 1px black; width:1050px; height:700px;">
+        <p style="padding-top: 20px;">各アイテムごとの料金概要になります。詳細はお問合せの程、お願いいたします。<p>
+        <ul class="fade" style="list-style: none; padding-top: 20px; padding-left: 0;">
+          <li><img src="img/image1.JPG" width="800"></li>
+          <li><img src="img/image2.JPG" width="800"></li>
+          <li><img src="img/image3.JPG" width="800"></li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+    $('.fade').slick({
+      autoplay: true,
+      autoplaySpeed: 3000,
+      dots: false,
+      arrows: true,
+      prevArrow: '<img src="https://teshimamma.com/login/wp-content/themes/mamma_v2/common/images/left.svg" class="slide-arrow prev-arrow">',
+      nextArrow: '<img src="https://teshimamma.com/login/wp-content/themes/mamma_v2/common/images/right.svg" class="slide-arrow next-arrow">',
+      infinite: true,
+      speed: 700,
+      fade: true,
+      cssEase: 'linear'
+    });
+    </script>
+
+  </body>
+</html>
