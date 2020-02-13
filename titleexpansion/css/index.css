@@ -1,0 +1,595 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+/*トップ表示画面（アイコン込）*/
+#top{
+  object-fit: cover;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-family: "游ゴシック", YuGothic, "Noto Sans", "Noto Sans TC", "Noto Sans KR", "Noto Sans Thai", "Noto Sans JP", Helvetica, Arial, sans-serif;
+}
+#top2{
+  text-align: center;
+  position: relative;
+  margin: 0 auto ;
+  width: 100vw;
+  -webkit-transition: all 1.3s ease;
+  transition: all 1.3s ease;
+  display: flex;
+  vertical-align: middle;
+}
+.head{
+  opacity: 0;
+  -webkit-transition: all 1.3s ease;
+  transition: all 1.3s ease;
+}
+.logo2{
+  font-size: 180px;
+  letter-spacing: 5px;
+  color: white;
+  width: 65vw;
+  margin: auto;
+  font-weight: bold;
+  padding-top: 200px;
+  font-family: "Futura",sans-serif;
+  /******************追　加******************/
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+  /******************追　加******************/
+}
+/******************追　加******************/
+.txt-effect {
+  animation: txtEffect 3s both;
+}
+@keyframes txtEffect {
+  100% {
+    -ms-filter: blur(0px);
+    filter: blur(0px);
+    transform: scale(1.1);
+  }
+}
+/******************追　加******************/
+
+.logo3{
+  color: white;
+  font-size: 50px;
+  font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',YuGothic,'Yu Gothic','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+  letter-spacing: 1.0em;
+  font-weight: bold;
+}
+.logo4{
+  left: 0;
+  margin-left: 50px;
+  margin-top: 20px;
+  position: fixed;
+  font-size: 60px;
+  font-family: "Futura",sans-serif;
+  color: #333;
+  font-weight: bold;
+  opacity: 0;
+  z-index: 900;
+  -webkit-transition: all 1.3s ease;
+  transition: all 1.3s ease;
+  cursor: pointer;
+}
+#top-mini{
+  -webkit-transition: all 1.5s ease;
+  transition: all 1.5s ease;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+#top-mini2{
+  max-width: 100vw;
+  height: 100vh;
+  background-image: url(../img/07.jpg) no-repeat center 0;
+  background-position: center;
+  background-size:cover;
+}
+.mini{
+  transform: scale(0.68, 0.68);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  border-radius: 150px;
+  overflow: hidden;
+  opacity: 0.3;
+}
+.mini2{
+  opacity: 0;
+}
+
+/*トップアイコン・ロゴ*/
+.fab{
+  color: #333;
+  z-index: 300;
+  padding-top: 3px;
+}
+.icon{
+  right: 0;
+  right: 130px;
+  top: 50px;
+  position: fixed;
+  z-index: 300;
+  float: right;
+  margin-right: 5px;
+}
+.icon a{
+  background-color: white;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  border: solid 1px #333;
+}
+
+.opacity1{
+  opacity: 1;
+  -webkit-transition: all 1.3s ease;
+  transition: all 1.3s ease;
+}
+.opacity0{
+  opacity: 0;
+  -webkit-transition: all 1.3s ease;
+  transition: all 1.3s ease;
+}
+
+.cb{
+  clear: both;
+}
+.next{
+  background-color: white;
+  color: #333;
+  border: solid 1px #333;
+  width: 120px;
+  height: 120px;
+  display: block;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 30px;
+  float: right;
+  position: fixed;
+  right: 0;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  z-index: 900;
+}
+.next p{
+  margin-top: 30px;
+  font-size: 17px;
+}
+.top4{
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+}
+/*全体の画面表示幅の設定*/
+.container{
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+
+/*コンセプト文*/
+.concept1{
+  float: left;
+  line-height: 2.3em;
+  font-weight: bold;
+  font-size: 20px;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-family: "游ゴシック", YuGothic, "Noto Sans", "Noto Sans TC", "Noto Sans KR", "Noto Sans Thai", "Noto Sans JP", Helvetica, Arial, sans-serif;
+}
+.box p {
+  -webkit-transition: all 1s;
+  -webkit-transform: translate(0, 0);
+  opacity: 1;
+}
+.box p.move {
+  -webkit-transform: translate(-500px, 0);
+  opacity: 0;
+}
+
+
+.concept{
+  text-align: left;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+.concept2{
+  float: right;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  font-size: 70px;
+  margin-top: 30px;
+}
+
+/*イメージ画像*/
+.photo-list{
+  margin: auto;
+  width: 90%;
+  height: 1500px;
+  text-align: center;
+  position: relative;
+}
+.photo-list1{
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0.95;
+}
+.photo-list2{
+  position: absolute;
+  left: 0;
+  top: 150px;
+  opacity: 0.95;
+  width: 500px;
+  height: 800px;
+}
+.photo-list3{
+  position: absolute;
+  right: 80px;
+  top: 450px;
+  width: 800px;
+  height: auto;
+  opacity: 0.95;
+}
+
+/*スライドショーの矢印位置を定義*/
+.slide-arrow{
+  position: absolute;
+  top: 50%;
+  margin-top: 270px;
+}
+.prev-arrow{
+  left: 410px;
+}
+.next-arrow{
+  right: 410px;
+}
+
+.pricelisttext{
+  line-height: 2.3em;
+  font-weight: bold;
+  font-size: 20px;
+  color: #333;
+  font-family: "游ゴシック", YuGothic, "Noto Sans", "Noto Sans TC", "Noto Sans KR", "Noto Sans Thai", "Noto Sans JP", Helvetica, Arial, sans-serif;
+}
+
+/*h1 各タイトル*/
+.title{
+  margin-top: 100px;
+  font-size: 50px;
+  font-family: 'Avenir Next','Avenir','Apple Symbols',sans-serif;
+}
+
+/*スクロールに合わせて浮き出てくる要素の設定*/
+.fadein {
+    opacity : 0;
+    transform : translate(0,1000px);
+    transition : all 1500ms;
+}
+.fadein.scrollin {
+    opacity : 1;
+    transform : translate(0, 0);
+}
+
+.subtitle{
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+/*サービス案内*/
+.box9{
+  text-align: center;
+  color: #333;
+}
+.box9-guide{
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.box9-guide i{
+  font-size: 50px;
+}
+.box9-guide span{
+  font-size: 20px;
+}
+h5{
+  font-size: 25px;
+  margin-top: 80px;
+}
+
+/*ACCESS*/
+.access{
+  margin: 0;
+}
+.access img{
+  width: 60%;
+  display: inline-block;
+  margin-top: 30px;
+}
+.access2{
+  text-align:left;
+  padding-left: 25px;
+  width: 23%;
+  display: inline-block;
+  vertical-align: top;
+  border: solid 2px #333;
+}
+
+/*フッター*/
+footer{
+  margin-top: 150px;
+}
+
+/*トップのスクロールボタン*/
+.scroll {
+  margin-top: 630px;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+.scroll {
+  padding-top: 70px;
+}
+.scroll span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb 1.5s infinite;
+  animation: sdb 1.5s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+/*画面右下のTELL丸の中の動く矢印*/
+.tj-btn-1 {
+   position:relative;
+   text-align:center;
+   display:inline-block;
+   font-size:2em;
+   font-weight:bold;
+   line-height:1.3em;
+   text-decoration:none;
+   color:#333;
+}
+
+.tj-btn-1:after{
+   position:absolute;
+   top: 0;
+   left: 0;
+   right:.5em;
+   transform: translateY(-50%);
+   content: "≫";
+   animation:infinite movearrow 1.5s ;
+}
+@keyframes movearrow {
+   0%{margin:0 20px 0 -20px;opacity:.3;}
+}
+
+/*ハンバーガーメニュー*/
+a{
+  color: #040404;
+  text-decoration: none;
+  font-family: "Futura",sans-serif;
+}
+.mainView{
+  width: 100vw;
+  height: 100vh;
+  background-color: #ccc;
+}
+.el_humburger {
+  padding-top: 22px;
+  position: fixed;
+  top: 50px;
+  right: 60px;
+  width: 70px;
+  height: 70px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 999;
+  cursor: pointer;
+  pointer-events: auto;
+  color: #333;
+  background-color: white;
+  border-radius: 50%;
+  border: solid 1px #333;
+  text-align: center;}
+
+@media screen and (max-width: 840px) {
+  .el_humburger {
+    display: block;
+    right: 0;
+    top: 0;
+    padding-top: 20px;
+    width: 70px;
+    height: 70px;}
+    #factory .el_humburger {
+      display: none; } }
+
+.el_humburger_wrapper {
+  margin-bottom: 5px;
+  width: 42px;
+  display: inline-block; }
+
+@media screen and (max-width: 840px) {
+  .el_humburger_wrapper {
+    margin-bottom: 5px;
+    width: 30px; } }
+
+.el_humburger_text {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  font-family: "游ゴシック Medium", YuGothic, "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif; }
+
+.js_humburgerOpen .el_humburger_text.el_humburger_text__menu {
+  display: none; }
+
+.el_humburger_text.el_humburger_text__close {
+  display: none; }
+
+.js_humburgerOpen .el_humburger_text.el_humburger_text__close {
+  display: block; }
+
+@media screen and (max-width: 840px) {
+  .el_humburger_text {
+    font-size: 10px;
+    padding-top: 2px; } }
+
+@media screen and (max-width: 840px) {
+  .el_humburger_text svg path {
+    -webkit-transition: all 200ms cubic-bezier(0.16, 0.52, 0.25, 1);
+    -o-transition: all 200ms cubic-bezier(0.16, 0.52, 0.25, 1);
+    transition: all 200ms cubic-bezier(0.16, 0.52, 0.25, 1);
+    fill: #000; } }
+
+@media screen and (max-width: 840px) {
+  .js_humburgerOpen .el_humburger_text svg path {
+    fill: #000; } }
+
+.el_humburger span.el_humburger_bar {
+  z-index: 999;
+  display: block;
+  width: 100%;
+  margin: 0 auto 9px;
+  height: 1px;
+  background: #000;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
+
+.el_humburger span.el_humburger_bar:last-child {
+  margin-bottom: 0; }
+
+.js_humburgerOpen .el_humburger span.el_humburger_bar {
+  background: #000;
+  z-index: 999;}
+
+@media screen and (max-width: 840px) {
+  .el_humburger span.el_humburger_bar {
+    left: 0;
+    top: 0;
+    background: #000;
+    z-index: 999;} }
+
+.js_humburgerOpen .el_humburger span.el_humburger_bar.top {
+  -webkit-transform: translateY(9px) rotate(-45deg);
+  -ms-transform: translateY(9px) rotate(-45deg);
+  transform: translateY(9px) rotate(-45deg); }
+
+.js_humburgerOpen .el_humburger span.el_humburger_bar.middle {
+  opacity: 0; }
+
+.js_humburgerOpen .el_humburger span.el_humburger_bar.bottom {
+  -webkit-transform: translateY(-11px) rotate(45deg);
+  -ms-transform: translateY(-11px) rotate(45deg);
+  transform: translateY(-11px) rotate(45deg); }
+
+.el_humburgerButton.el_humburgerButton__close {
+  top: 2%;
+  right: 2%; }
+
+.el_humburgerButton__close span.el_humburger_bar {
+  display: block;
+  width: 35px;
+  margin: 0 auto;
+  height: 4px;
+  background: #000; }
+
+.el_humburgerButton__close span.el_humburger_bar.top {
+  -webkit-transform: translateY(5px) rotate(-45deg);
+  -ms-transform: translateY(5px) rotate(-45deg);
+  transform: translateY(5px) rotate(-45deg); }
+
+.el_humburgerButton__close span.el_humburger_bar.bottom {
+  -webkit-transform: translateY(-6px) rotate(45deg);
+  -ms-transform: translateY(-6px) rotate(45deg);
+  transform: translateY(-6px) rotate(45deg); }
+
+.navi {
+  z-index: 999;
+  position: fixed;
+  right: 0;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 0;
+  padding-top: 100px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 600ms ease-out;
+  -o-transition: all 600ms ease-out;
+  transition: all 600ms ease-out;
+  overflow: hidden; }
+
+.js_humburgerOpen .navi {
+    width: 450px;
+    z-index: 999;}
+    @media screen and (max-width: 840px) {
+      .js_humburgerOpen .navi {
+        width: 100%;
+        padding: 100px 5% 0;
+        z-index: 999;} }
+
+.navi_item {
+  margin-bottom: 28px;
+  font-size: 20px;
+  font-family: "Marcellus", serif !important;
+  white-space: nowrap;
+  margin-left: 90px;
+  z-index: 999;}
+  .navi_item.op_innerLink {
+    cursor: pointer;
+    z-index: 999;}
+  @media screen and (max-width: 840px) {
+    .navi_item {
+      margin-left: 0;
+      font-size: 18px;} }
