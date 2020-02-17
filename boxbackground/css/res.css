@@ -1,0 +1,37 @@
+/* スマホ向けレイアウト */
+@media all and (max-width: 1000px) {
+
+.member3{
+  width: 40%;
+}
+.logo{
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+header .icon{
+  padding-top: 10px;
+}
+.box9-guide{
+  width: 100%;
+}
+.logo2{
+  padding-top: 500px;
+}
+.scroll{
+  padding-top: 1000px;
+}
+.scroll span{
+  top: 900px;
+}
+.icon{
+  top: 40px;
+}
+}
+
+
+/* (スマホ向けレイアウト)  */
+@media all and (max-width: 812px) {
+
+
+
+}
